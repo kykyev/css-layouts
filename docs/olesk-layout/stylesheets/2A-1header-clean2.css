@@ -1,0 +1,279 @@
+/* line 9, ../sass/2A-1header-clean2.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/2A-1header-clean2.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 17, ../sass/2A-1header-clean2.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* line 23, ../sass/2A-1header-clean2.scss */
+.l-footer {
+  height: 200px;
+  max-width: 1200px;
+  margin: -200px auto 0 auto;
+  background: #00ddd4;
+  background: rgba(0, 221, 212, 0.5);
+}
+
+/* line 32, ../sass/2A-1header-clean2.scss */
+.l-root-wrap {
+  height: 100%;
+  padding-bottom: 200px;
+  display: table;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 42, ../sass/2A-1header-clean2.scss */
+.l-page-wrap {
+  display: table-cell;
+  height: 100%;
+}
+
+/* line 47, ../sass/2A-1header-clean2.scss */
+.l-chrome-hack {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 53, ../sass/2A-1header-clean2.scss */
+.l-content-wrap {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 59, ../sass/2A-1header-clean2.scss */
+.l-header {
+  height: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: table-row;
+}
+
+/* line 66, ../sass/2A-1header-clean2.scss */
+.l-header-inner {
+  height: 100px;
+  overflow: hidden;
+  background: rgba(255, 255, 0, 0.5);
+}
+
+/* line 73, ../sass/2A-1header-clean2.scss */
+.l-content-wrap-inner {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 79, ../sass/2A-1header-clean2.scss */
+.l-main-section {
+  display: table-row;
+  height: 100%;
+  background: #fa00fa;
+  background: rgba(250, 0, 250, 0.3);
+}
+@media only screen and (min-width: 960px) {
+  /* line 79, ../sass/2A-1header-clean2.scss */
+  .l-main-section {
+    display: table-cell;
+    width: 75%;
+  }
+}
+
+/* line 92, ../sass/2A-1header-clean2.scss */
+.l-main-section__inner-wrap {
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+  display: block;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 100, ../sass/2A-1header-clean2.scss */
+  .l-main-section__inner-wrap {
+    display: table;
+  }
+}
+/* line 104, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-main-section__inner-wrap {
+  display: table;
+  height: auto;
+}
+
+/* line 109, ../sass/2A-1header-clean2.scss */
+.l-main-section__inner-content {
+  height: 100%;
+  width: 100%;
+  background: red;
+}
+
+/* line 115, ../sass/2A-1header-clean2.scss */
+.l-sidebar {
+  display: table-row;
+  background: #646464;
+  background: rgba(100, 100, 100, 0.3);
+}
+@media only screen and (min-width: 960px) {
+  /* line 115, ../sass/2A-1header-clean2.scss */
+  .l-sidebar {
+    display: table-cell;
+    width: 25%;
+  }
+}
+
+/* line 127, ../sass/2A-1header-clean2.scss */
+.l-sidebar__inner-wrap {
+  height: 100%;
+  padding: 20px;
+  width: 100%;
+  display: block;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 135, ../sass/2A-1header-clean2.scss */
+  .l-sidebar__inner-wrap {
+    display: table;
+  }
+}
+/* line 139, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-sidebar__inner-wrap {
+  display: table;
+  height: auto;
+}
+
+/* line 144, ../sass/2A-1header-clean2.scss */
+.l-sidebar__inner-content {
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+/* --- IE hacks --- */
+/* line 154, ../sass/2A-1header-clean2.scss */
+.lt-ie10 .l-chrome-hack {
+  display: table;
+}
+
+/* line 158, ../sass/2A-1header-clean2.scss */
+.lt-ie10 .l-content-wrap {
+  display: table-cell;
+}
+
+/* line 162, ../sass/2A-1header-clean2.scss */
+.lt-ie10 .l-main-section__inner-wrap {
+  display: table;
+}
+
+/* line 166, ../sass/2A-1header-clean2.scss */
+.lt-ie10 .l-sidebar__inner-wrap {
+  display: table;
+}
+
+/* line 172, ../sass/2A-1header-clean2.scss */
+.lt-ie9 div {
+  box-sizing: border-box;
+}
+
+/* line 176, ../sass/2A-1header-clean2.scss */
+.lt-ie9 .l-root-wrap {
+  padding-bottom: 0;
+  min-width: 900px;
+}
+
+/* line 181, ../sass/2A-1header-clean2.scss */
+.lt-ie9 .l-footer {
+  min-width: 900px;
+}
+
+/* line 185, ../sass/2A-1header-clean2.scss */
+.lt-ie9 .l-page-wrap {
+  display: table-row;
+}
+
+/* line 189, ../sass/2A-1header-clean2.scss */
+.lt-ie9 .l-chrome-hack {
+  display: table-cell;
+}
+
+/* line 193, ../sass/2A-1header-clean2.scss */
+.lt-ie9 .l-content-wrap {
+  padding-bottom: 200px;
+}
+
+/* line 197, ../sass/2A-1header-clean2.scss */
+.lt-ie9 .l-content-wrap-inner {
+  display: table-row;
+}
+
+/* line 201, ../sass/2A-1header-clean2.scss */
+.lt-ie9 .l-main-section {
+  display: table-cell;
+  height: auto;
+}
+
+/* line 206, ../sass/2A-1header-clean2.scss */
+.lt-ie9 .l-sidebar {
+  display: table-cell;
+  height: auto;
+}
+
+/* --- Opera hacks --- */
+/* line 213, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-header-inner {
+  position: absolute;
+}
+
+/* line 217, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-content-wrap-inner {
+  display: table-row;
+}
+
+/* line 221, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-root-wrap {
+  padding-bottom: 0;
+}
+
+/* line 225, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-content-wrap {
+  padding-bottom: 200px;
+  position: relative;
+}
+
+/* line 230, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-page-wrap {
+  display: table-row;
+}
+
+/* line 234, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-chrome-hack {
+  display: table-cell;
+}
+
+/* line 238, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-main-section {
+  background-repeat: no-repeat;
+  background-size: 100% 51%;
+  background-image: -o-linear-gradient(180deg, transparent 20px, red 20px, red 51%, transparent 51%), -o-linear-gradient(180deg, transparent 20px, red 20px, red 51%, transparent 51%), -o-linear-gradient(0deg, transparent 20px, red 20px, red 51%, transparent 51%), -o-linear-gradient(0deg, transparent 20px, red 20px, red 51%, transparent 51%);
+  background-position: top 20px right 0px, bottom 20px right 0px, top 20px right 0px, bottom 20px right 0px;
+}
+
+/* line 253, ../sass/2A-1header-clean2.scss */
+noindex:-o-prefocus, .l-sidebar {
+  background-repeat: no-repeat;
+  background-size: 100% 51%;
+  background-image: -o-linear-gradient(180deg, transparent 20px, grey 20px, grey 51%, transparent 51%), -o-linear-gradient(180deg, transparent 20px, grey 20px, grey 51%, transparent 51%), -o-linear-gradient(0deg, transparent 20px, grey 20px, grey 51%, transparent 51%), -o-linear-gradient(0deg, transparent 20px, grey 20px, grey 51%, transparent 51%);
+  background-position: top 20px right 0px, bottom 20px right 0px, top 20px right 0px, bottom 20px right 0px;
+}

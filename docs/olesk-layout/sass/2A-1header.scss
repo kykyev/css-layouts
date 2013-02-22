@@ -1,0 +1,187 @@
+@import "compass/css3/box-sizing";
+
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    padding: 0 20px;
+}
+
+.l-footer {
+    height: 200px;
+    max-width: 1200px;
+    margin: -200px auto 0 auto;
+
+    background: rgb(0, 221, 212);
+    background: rgba(0, 221, 212, 0.5);
+}
+
+.l-root-wrap {
+    height: 100%;
+    padding-bottom: 200px;
+    display: table;
+    // это нужно на случай, когда ширина контента меньше экрана
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    outline: dashed 8px red;
+}
+
+.l-page-wrap {
+    display: table-cell;
+    height: 100%;
+
+    font-size: 20px;
+    outline: dashed 8px #000;
+    background: rgb(250, 250, 0);
+    background: rgba(250, 250, 0, 0.3);
+}
+
+.l-chrome-hack {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+
+    outline: dashed 8px blue;
+    background: rgb(0, 250, 0);
+    background: rgba(0, 250, 0, 0.3);
+}
+
+.l-content-wrap {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.l-header {
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: table-row;
+
+    background: rgba(250, 250, 0, 0.5);
+}
+
+.l-header-inner {
+    height: 100px;
+    overflow: hidden;
+    
+    background: rgba(150, 150, 150, 0.99);
+}
+
+.l-content-wrap-inner {
+    display: table;
+    height: 100%; 
+    width: 100%;   
+}
+
+.l-main-section {
+    display: table-row;
+    height: 100%;
+
+    @media only screen and ( min-width: 960px ) {
+        display: table-cell;
+        width: 75%;
+    } 
+
+    background: rgb(250, 0, 250);
+    background: rgba(250, 0, 250, 0.3);
+}
+
+.l-sidebar {
+    display: table-row;
+
+    @media only screen and ( min-width: 960px ) {
+        display: table-cell;
+        width: 25%;
+    }
+
+    background: rgb(100, 100, 100);
+    background: rgba(100, 100, 100, 0.3);
+}
+
+/* --- IE hacks --- */
+
+// less IE10
+
+.lt-ie10 .l-chrome-hack {
+    display: table;
+}
+
+.lt-ie10 .l-content-wrap {
+    display: table-cell;
+}
+
+// less IE9
+
+.lt-ie9 div {
+    box-sizing : border-box;
+}
+
+.lt-ie9 .l-root-wrap {
+    padding-bottom: 0;
+    min-width: 900px;
+}
+
+.lt-ie9 .l-footer {
+    min-width: 900px;
+}
+
+.lt-ie9 .l-page-wrap {
+    display: table-row;
+}
+
+.lt-ie9 .l-chrome-hack {
+    display: table-cell;
+}
+
+.lt-ie9 .l-content-wrap {
+    padding-bottom: 200px;
+}
+
+.lt-ie9 .l-content-wrap-inner {
+    display: table-row;
+}
+
+.lt-ie9 .l-main-section {
+    display: table-cell;
+    height: auto;
+}
+
+.lt-ie9 .l-sidebar {
+    display: table-cell;
+    height: auto;
+}
+
+/* --- Opera hacks --- */
+
+noindex:-o-prefocus, .l-header-inner {
+    position: absolute;
+}
+
+noindex:-o-prefocus, .l-content-wrap-inner {
+    display: table-row;
+}
+
+noindex:-o-prefocus, .l-root-wrap {
+    padding-bottom: 0;
+}
+
+noindex:-o-prefocus, .l-content-wrap {
+    padding-bottom: 200px;
+    position: relative;
+}
+
+noindex:-o-prefocus, .l-page-wrap {
+    display: table-row;
+}
+
+noindex:-o-prefocus, .l-chrome-hack {
+    display: table-cell;
+}

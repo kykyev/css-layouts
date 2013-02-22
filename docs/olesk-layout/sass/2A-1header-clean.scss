@@ -1,0 +1,259 @@
+@import "compass/css3/box-sizing";
+
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    padding: 0 20px;
+    font-size: 10px;
+}
+
+.l-footer {
+    height: 200px;
+    max-width: 1200px;
+    margin: -200px auto 0 auto;
+
+    background: rgb(0, 221, 212);
+    background: rgba(0, 221, 212, 0.5);
+}
+
+.l-root-wrap {
+    height: 100%;
+    padding-bottom: 200px;
+    display: table;
+    // это нужно на случай, когда ширина контента меньше экрана
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.l-page-wrap {
+    display: table-cell;
+    height: 100%;
+}
+
+.l-chrome-hack {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.l-content-wrap {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.l-header {
+    height: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: table-row;
+}
+
+.l-header-inner {
+    height: 100px;
+    overflow: hidden;
+    
+    background: rgba(255, 255, 0, 0.5);
+}
+
+.l-content-wrap-inner {
+    display: table;
+    height: 100%; 
+    width: 100%;   
+}
+
+.l-main-section {
+    display: table-row;
+    height: 100%;
+
+    @media only screen and ( min-width: 960px ) {
+        display: table-cell;
+        width: 75%;
+    } 
+
+    background: rgb(250, 0, 250);
+    background: rgba(250, 0, 250, 0.3);
+}
+
+.l-main-section__inner-wrap {
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+    // firefox need display: block
+    display: block;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .l-main-section__inner-wrap { 
+        display: table;
+    } 
+}
+noindex:-o-prefocus, .l-main-section__inner-wrap {
+    display: table;
+    height: auto;
+}
+
+.l-main-section__inner-content {
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+.l-sidebar {
+    display: table-row;
+
+    @media only screen and ( min-width: 960px ) {
+        display: table-cell;
+        width: 25%;
+    }
+
+    background: rgb(100, 100, 100);
+    background: rgba(100, 100, 100, 0.3);
+}
+
+.l-sidebar__inner-wrap {
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+    // firefox need display: block
+    display: block;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .l-sidebar__inner-wrap { 
+        display: table;
+    } 
+}
+noindex:-o-prefocus, .l-sidebar__inner-wrap {
+    display: table;
+    height: auto;
+}
+
+.l-sidebar__inner-content {
+    height: 100%;
+    width: 100%;
+    background: grey;
+}
+
+/* --- IE hacks --- */
+
+// less IE10
+
+.lt-ie10 .l-chrome-hack {
+    display: table;
+}
+
+.lt-ie10 .l-content-wrap {
+    display: table-cell;
+}
+
+.lt-ie10 .l-main-section__inner-wrap {
+    display: table;
+}
+
+.lt-ie10 .l-sidebar__inner-wrap {
+    display: table;
+}
+
+// less IE9
+
+.lt-ie9 div {
+    box-sizing : border-box;
+}
+
+.lt-ie9 .l-root-wrap {
+    padding-bottom: 0;
+    min-width: 900px;
+}
+
+.lt-ie9 .l-footer {
+    min-width: 900px;
+}
+
+.lt-ie9 .l-page-wrap {
+    display: table-row;
+}
+
+.lt-ie9 .l-chrome-hack {
+    display: table-cell;
+}
+
+.lt-ie9 .l-content-wrap {
+    padding-bottom: 200px;
+}
+
+.lt-ie9 .l-content-wrap-inner {
+    display: table-row;
+}
+
+.lt-ie9 .l-main-section {
+    display: table-cell;
+    height: auto;
+}
+
+.lt-ie9 .l-sidebar {
+    display: table-cell;
+    height: auto;
+}
+
+/* --- Opera hacks --- */
+
+noindex:-o-prefocus, .l-header-inner {
+    position: absolute;
+}
+
+noindex:-o-prefocus, .l-content-wrap-inner {
+    display: table-row;
+}
+
+noindex:-o-prefocus, .l-root-wrap {
+    padding-bottom: 0;
+}
+
+noindex:-o-prefocus, .l-content-wrap {
+    padding-bottom: 200px;
+    position: relative;
+}
+
+noindex:-o-prefocus, .l-page-wrap {
+    display: table-row;
+}
+
+noindex:-o-prefocus, .l-chrome-hack {
+    display: table-cell;
+}
+
+noindex:-o-prefocus, .l-main-section {
+    background-repeat: no-repeat;
+    background-size: 100% 51%; 
+    background-image:
+      -o-linear-gradient(180deg, transparent 20px, red 20px, red 51%, transparent 51%),
+      -o-linear-gradient(180deg, transparent 20px, red 20px, red 51%, transparent 51%),
+      -o-linear-gradient(0deg, transparent 20px, red 20px, red 51%, transparent 51%),
+      -o-linear-gradient(0deg, transparent 20px, red 20px, red 51%, transparent 51%);
+    background-position: 
+      top 20px right 0px, 
+      bottom 20px right 0px, 
+      top 20px right 0px, 
+      bottom 20px right 0px;
+}
+
+noindex:-o-prefocus, .l-sidebar {
+    background-repeat: no-repeat;
+    background-size: 100% 51%; 
+    background-image:
+      -o-linear-gradient(180deg, transparent 20px, grey 20px, grey 51%, transparent 51%),
+      -o-linear-gradient(180deg, transparent 20px, grey 20px, grey 51%, transparent 51%),
+      -o-linear-gradient(0deg, transparent 20px, grey 20px, grey 51%, transparent 51%),
+      -o-linear-gradient(0deg, transparent 20px, grey 20px, grey 51%, transparent 51%);
+    background-position: 
+      top 20px right 0px, 
+      bottom 20px right 0px, 
+      top 20px right 0px, 
+      bottom 20px right 0px;
+}
