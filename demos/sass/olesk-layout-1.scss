@@ -1,0 +1,24 @@
+@import "css-layouts/olesk-layout";
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@include olesk-layout($padding: 10px);
+
+.l-footer {
+    background: rgb(20, 100, 255);
+}
+
+.l-main-section__inner-content {
+    background: rgb(20, 255, 100);
+}
+
+.l-sidebar__inner-content {
+    background: rgb(255, 20, 100);
+}
+
+.l-header-inner {
+    background: rgb(255, 150, 20);
+}

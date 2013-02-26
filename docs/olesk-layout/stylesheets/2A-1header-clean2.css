@@ -1,23 +1,23 @@
-/* line 9, ../sass/2A-1header-clean2.scss */
+/* line 10, ../sass/2A-1header-clean2.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 13, ../sass/2A-1header-clean2.scss */
+/* line 14, ../sass/2A-1header-clean2.scss */
 body, html {
   height: 100%;
 }
 
-/* line 17, ../sass/2A-1header-clean2.scss */
+/* line 18, ../sass/2A-1header-clean2.scss */
 body {
   margin: 0;
   padding: 0;
   font-size: 16px;
 }
 
-/* line 23, ../sass/2A-1header-clean2.scss */
+/* line 24, ../sass/2A-1header-clean2.scss */
 .l-footer {
   height: 200px;
   max-width: 1200px;
@@ -26,7 +26,7 @@ body {
   background: rgba(0, 221, 212, 0.5);
 }
 
-/* line 32, ../sass/2A-1header-clean2.scss */
+/* line 33, ../sass/2A-1header-clean2.scss */
 .l-root-wrap {
   height: 100%;
   padding-bottom: 200px;
@@ -36,27 +36,27 @@ body {
   margin: 0 auto;
 }
 
-/* line 42, ../sass/2A-1header-clean2.scss */
+/* line 43, ../sass/2A-1header-clean2.scss */
 .l-page-wrap {
   display: table-cell;
   height: 100%;
 }
 
-/* line 47, ../sass/2A-1header-clean2.scss */
+/* line 48, ../sass/2A-1header-clean2.scss */
 .l-chrome-hack {
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
 
-/* line 53, ../sass/2A-1header-clean2.scss */
+/* line 54, ../sass/2A-1header-clean2.scss */
 .l-content-wrap {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-/* line 59, ../sass/2A-1header-clean2.scss */
+/* line 60, ../sass/2A-1header-clean2.scss */
 .l-header {
   height: 100px;
   max-width: 1200px;
@@ -64,21 +64,21 @@ body {
   display: table-row;
 }
 
-/* line 66, ../sass/2A-1header-clean2.scss */
+/* line 67, ../sass/2A-1header-clean2.scss */
 .l-header-inner {
   height: 100px;
   overflow: hidden;
   background: rgba(255, 255, 0, 0.5);
 }
 
-/* line 73, ../sass/2A-1header-clean2.scss */
+/* line 74, ../sass/2A-1header-clean2.scss */
 .l-content-wrap-inner {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-/* line 79, ../sass/2A-1header-clean2.scss */
+/* line 80, ../sass/2A-1header-clean2.scss */
 .l-main-section {
   display: table-row;
   height: 100%;
@@ -86,14 +86,14 @@ body {
   background: rgba(250, 0, 250, 0.3);
 }
 @media only screen and (min-width: 960px) {
-  /* line 79, ../sass/2A-1header-clean2.scss */
+  /* line 80, ../sass/2A-1header-clean2.scss */
   .l-main-section {
     display: table-cell;
     width: 75%;
   }
 }
 
-/* line 92, ../sass/2A-1header-clean2.scss */
+/* line 93, ../sass/2A-1header-clean2.scss */
 .l-main-section__inner-wrap {
   height: 100%;
   padding: 20px;
@@ -102,39 +102,39 @@ body {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 100, ../sass/2A-1header-clean2.scss */
+  /* line 101, ../sass/2A-1header-clean2.scss */
   .l-main-section__inner-wrap {
     display: table;
   }
 }
-/* line 104, ../sass/2A-1header-clean2.scss */
+/* line 105, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-main-section__inner-wrap {
   display: table;
   height: auto;
 }
 
-/* line 109, ../sass/2A-1header-clean2.scss */
+/* line 110, ../sass/2A-1header-clean2.scss */
 .l-main-section__inner-content {
   height: 100%;
   width: 100%;
   background: red;
 }
 
-/* line 115, ../sass/2A-1header-clean2.scss */
+/* line 116, ../sass/2A-1header-clean2.scss */
 .l-sidebar {
   display: table-row;
   background: #646464;
   background: rgba(100, 100, 100, 0.3);
 }
 @media only screen and (min-width: 960px) {
-  /* line 115, ../sass/2A-1header-clean2.scss */
+  /* line 116, ../sass/2A-1header-clean2.scss */
   .l-sidebar {
     display: table-cell;
     width: 25%;
   }
 }
 
-/* line 127, ../sass/2A-1header-clean2.scss */
+/* line 128, ../sass/2A-1header-clean2.scss */
 .l-sidebar__inner-wrap {
   height: 100%;
   padding: 20px;
@@ -143,18 +143,18 @@ noindex:-o-prefocus, .l-main-section__inner-wrap {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 135, ../sass/2A-1header-clean2.scss */
+  /* line 136, ../sass/2A-1header-clean2.scss */
   .l-sidebar__inner-wrap {
     display: table;
   }
 }
-/* line 139, ../sass/2A-1header-clean2.scss */
+/* line 140, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-sidebar__inner-wrap {
   display: table;
   height: auto;
 }
 
-/* line 144, ../sass/2A-1header-clean2.scss */
+/* line 145, ../sass/2A-1header-clean2.scss */
 .l-sidebar__inner-content {
   height: 100%;
   width: 100%;
@@ -162,107 +162,107 @@ noindex:-o-prefocus, .l-sidebar__inner-wrap {
 }
 
 /* --- IE hacks --- */
-/* line 154, ../sass/2A-1header-clean2.scss */
+/* line 155, ../sass/2A-1header-clean2.scss */
 .lt-ie10 .l-chrome-hack {
   display: table;
 }
 
-/* line 158, ../sass/2A-1header-clean2.scss */
+/* line 159, ../sass/2A-1header-clean2.scss */
 .lt-ie10 .l-content-wrap {
   display: table-cell;
 }
 
-/* line 162, ../sass/2A-1header-clean2.scss */
+/* line 163, ../sass/2A-1header-clean2.scss */
 .lt-ie10 .l-main-section__inner-wrap {
   display: table;
 }
 
-/* line 166, ../sass/2A-1header-clean2.scss */
+/* line 167, ../sass/2A-1header-clean2.scss */
 .lt-ie10 .l-sidebar__inner-wrap {
   display: table;
 }
 
-/* line 172, ../sass/2A-1header-clean2.scss */
+/* line 173, ../sass/2A-1header-clean2.scss */
 .lt-ie9 div {
   box-sizing: border-box;
 }
 
-/* line 176, ../sass/2A-1header-clean2.scss */
+/* line 177, ../sass/2A-1header-clean2.scss */
 .lt-ie9 .l-root-wrap {
   padding-bottom: 0;
   min-width: 900px;
 }
 
-/* line 181, ../sass/2A-1header-clean2.scss */
+/* line 182, ../sass/2A-1header-clean2.scss */
 .lt-ie9 .l-footer {
   min-width: 900px;
 }
 
-/* line 185, ../sass/2A-1header-clean2.scss */
+/* line 186, ../sass/2A-1header-clean2.scss */
 .lt-ie9 .l-page-wrap {
   display: table-row;
 }
 
-/* line 189, ../sass/2A-1header-clean2.scss */
+/* line 190, ../sass/2A-1header-clean2.scss */
 .lt-ie9 .l-chrome-hack {
   display: table-cell;
 }
 
-/* line 193, ../sass/2A-1header-clean2.scss */
+/* line 194, ../sass/2A-1header-clean2.scss */
 .lt-ie9 .l-content-wrap {
   padding-bottom: 200px;
 }
 
-/* line 197, ../sass/2A-1header-clean2.scss */
+/* line 198, ../sass/2A-1header-clean2.scss */
 .lt-ie9 .l-content-wrap-inner {
   display: table-row;
 }
 
-/* line 201, ../sass/2A-1header-clean2.scss */
+/* line 202, ../sass/2A-1header-clean2.scss */
 .lt-ie9 .l-main-section {
   display: table-cell;
   height: auto;
 }
 
-/* line 206, ../sass/2A-1header-clean2.scss */
+/* line 207, ../sass/2A-1header-clean2.scss */
 .lt-ie9 .l-sidebar {
   display: table-cell;
   height: auto;
 }
 
 /* --- Opera hacks --- */
-/* line 213, ../sass/2A-1header-clean2.scss */
+/* line 214, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-header-inner {
   position: absolute;
 }
 
-/* line 217, ../sass/2A-1header-clean2.scss */
+/* line 218, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-content-wrap-inner {
   display: table-row;
 }
 
-/* line 221, ../sass/2A-1header-clean2.scss */
+/* line 222, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-root-wrap {
   padding-bottom: 0;
 }
 
-/* line 225, ../sass/2A-1header-clean2.scss */
+/* line 226, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-content-wrap {
   padding-bottom: 200px;
   position: relative;
 }
 
-/* line 230, ../sass/2A-1header-clean2.scss */
+/* line 231, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-page-wrap {
   display: table-row;
 }
 
-/* line 234, ../sass/2A-1header-clean2.scss */
+/* line 235, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-chrome-hack {
   display: table-cell;
 }
 
-/* line 238, ../sass/2A-1header-clean2.scss */
+/* line 239, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-main-section {
   background-repeat: no-repeat;
   background-size: 100% 51%;
@@ -270,7 +270,7 @@ noindex:-o-prefocus, .l-main-section {
   background-position: top 20px right 0px, bottom 20px right 0px, top 20px right 0px, bottom 20px right 0px;
 }
 
-/* line 253, ../sass/2A-1header-clean2.scss */
+/* line 254, ../sass/2A-1header-clean2.scss */
 noindex:-o-prefocus, .l-sidebar {
   background-repeat: no-repeat;
   background-size: 100% 51%;

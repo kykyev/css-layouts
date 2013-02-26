@@ -5,6 +5,7 @@ $header-height: 100px !default;
 $wide-screen-edge: 960px !default;
 $page-max-width: 1200px !default;
 $padding: 20px !default;
+$ie-legacy-min-width: 900px !default;
 
 *, *:after, *:before {
     @include box-sizing(border-box);
@@ -175,11 +176,11 @@ noindex:-o-prefocus, .l-sidebar__inner-wrap {
 
 .lt-ie9 .l-root-wrap {
     padding-bottom: 0;
-    min-width: 900px;
+    min-width: $ie-legacy-min-width;
 }
 
 .lt-ie9 .l-footer {
-    min-width: 900px;
+    min-width: $ie-legacy-min-width;
 }
 
 .lt-ie9 .l-page-wrap {
