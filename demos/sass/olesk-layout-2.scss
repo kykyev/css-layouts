@@ -1,0 +1,59 @@
+@import "css-layouts/olesk-layout";
+@import "css-grids/common/respond-to";
+@import "css-grids/common/utils";
+
+$bp_spec: (iphone 480px) (tablet 960px) (laptop 1024px);
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.l-footer {
+    background: rgb(20, 100, 255);
+}
+
+.l-main-section__inner-content {
+    background: rgb(20, 255, 100);
+}
+
+.l-sidebar__inner-content {
+    background: rgb(255, 20, 100);
+}
+
+.l-header-inner {
+    background: rgb(255, 150, 20);
+}
+
+@include olesk-layout(
+    $footer-height: 300px,
+    $header-height: 110px,
+    $wide-screen-edge: hash($bp_spec, tablet),
+    $page-max-width: 1400px,
+    $main-section-width-prc: 75%,
+    $padding: 20px 10px,
+    $ie-legacy-min-width: 900px
+);
+
+@include respond_to_upto ($bp_spec, iphone) {
+    
+    @include olesk-layout-adjust(
+        $footer-height: 200px,
+        $header-height: 50px, 
+        $padding-main: 10px 5px 5px 5px,
+        $padding-sidebar: 5px 5px 10px 5px
+    );
+}
+
+@include respond_to_interval ($bp_spec, iphone, tablet) {
+    
+    @include olesk-layout-adjust(
+        $footer-height: 300px,
+        $header-height: 70px, 
+        $padding-main: 14px 7px 7px 7px,
+        $padding-sidebar: 7px 7px 14px 7px
+    );
+}
+
+
+

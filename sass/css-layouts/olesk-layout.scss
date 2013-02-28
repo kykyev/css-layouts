@@ -225,3 +225,38 @@
         display: table-cell;
     }
 }
+
+
+@mixin olesk-layout-adjust(
+    $footer-height, 
+    $header-height, 
+    $padding-main,
+    $padding-sidebar)
+{
+    .l-footer {
+        height: $footer-height;
+        margin: -$footer-height auto 0 auto;
+    }
+
+    .l-root-wrap {
+        padding-bottom: $footer-height;
+    }
+
+    .l-header {
+        height: $header-height;
+    }
+
+    .l-header-inner {
+        height: $header-height;
+    }
+
+    .l-main-section__inner-wrap {
+        padding: $padding-main;
+    }
+    
+    .l-sidebar__inner-wrap {
+        padding: $padding-sidebar;
+    }
+    
+
+}
