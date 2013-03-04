@@ -87,21 +87,25 @@
         // firefox need display: block
         display: block;
     }
-    // chrome need display: table
+    
+    .l-main-section__inner-content {
+        height: 100%;
+        width: 100%;
+    }
+
+    // chrome hack
     @media screen and (-webkit-min-device-pixel-ratio:0) { 
         .l-main-section__inner-wrap { 
             display: table;
-        } 
+        }
+        .l-main-section__inner-content {
+            display: table-cell;
+        }
     }
     // opera hack
     noindex:-o-prefocus, .l-main-section__inner-wrap {
         display: table;
         height: auto;
-    }
-
-    .l-main-section__inner-content {
-        height: 100%;
-        width: 100%;
     }
 
     .l-sidebar {
@@ -120,21 +124,25 @@
         // firefox need display: block
         display: block;
     }
-    // chrome need display: table
+    
+    .l-sidebar__inner-content {
+        height: 100%;
+        width: 100%;
+    }
+
+    // chrome hack
     @media screen and (-webkit-min-device-pixel-ratio:0) { 
         .l-sidebar__inner-wrap { 
             display: table;
-        } 
+        }
+        .l-sidebar__inner-content {
+            display: table-cell;
+        }
     }
     // opera hack
     noindex:-o-prefocus, .l-sidebar__inner-wrap {
         display: table;
         height: auto;
-    }
-
-    .l-sidebar__inner-content {
-        height: 100%;
-        width: 100%;
     }
 
     /* --- IE hacks --- */

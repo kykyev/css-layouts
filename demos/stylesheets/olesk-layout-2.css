@@ -11,12 +11,12 @@ body {
 
 /* line 16, ../sass/olesk-layout-2.scss */
 .l-main-section__inner-content {
-  background: #14ff64;
+  background: rgba(20, 255, 100, 0.4);
 }
 
 /* line 20, ../sass/olesk-layout-2.scss */
 .l-sidebar__inner-content {
-  background: #ff1464;
+  background: rgba(255, 20, 100, 0.4);
 }
 
 /* line 24, ../sass/olesk-layout-2.scss */
@@ -115,37 +115,42 @@ body, html {
   display: block;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 92, ../../sass/css-layouts/olesk-layout.scss */
-  .l-main-section__inner-wrap {
-    display: table;
-  }
-}
-/* line 97, ../../sass/css-layouts/olesk-layout.scss */
-noindex:-o-prefocus, .l-main-section__inner-wrap {
-  display: table;
-  height: auto;
-}
-
-/* line 102, ../../sass/css-layouts/olesk-layout.scss */
+/* line 91, ../../sass/css-layouts/olesk-layout.scss */
 .l-main-section__inner-content {
   height: 100%;
   width: 100%;
 }
 
-/* line 107, ../../sass/css-layouts/olesk-layout.scss */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 98, ../../sass/css-layouts/olesk-layout.scss */
+  .l-main-section__inner-wrap {
+    display: table;
+  }
+
+  /* line 101, ../../sass/css-layouts/olesk-layout.scss */
+  .l-main-section__inner-content {
+    display: table-cell;
+  }
+}
+/* line 106, ../../sass/css-layouts/olesk-layout.scss */
+noindex:-o-prefocus, .l-main-section__inner-wrap {
+  display: table;
+  height: auto;
+}
+
+/* line 111, ../../sass/css-layouts/olesk-layout.scss */
 .l-sidebar {
   display: table-row;
 }
 @media only screen and (min-width: 960px) {
-  /* line 107, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 111, ../../sass/css-layouts/olesk-layout.scss */
   .l-sidebar {
     display: table-cell;
     width: 25%;
   }
 }
 
-/* line 116, ../../sass/css-layouts/olesk-layout.scss */
+/* line 120, ../../sass/css-layouts/olesk-layout.scss */
 .l-sidebar__inner-wrap {
   height: 100%;
   padding: 20px 10px;
@@ -153,185 +158,190 @@ noindex:-o-prefocus, .l-main-section__inner-wrap {
   display: block;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 125, ../../sass/css-layouts/olesk-layout.scss */
-  .l-sidebar__inner-wrap {
-    display: table;
-  }
-}
-/* line 130, ../../sass/css-layouts/olesk-layout.scss */
-noindex:-o-prefocus, .l-sidebar__inner-wrap {
-  display: table;
-  height: auto;
-}
-
-/* line 135, ../../sass/css-layouts/olesk-layout.scss */
+/* line 128, ../../sass/css-layouts/olesk-layout.scss */
 .l-sidebar__inner-content {
   height: 100%;
   width: 100%;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 135, ../../sass/css-layouts/olesk-layout.scss */
+  .l-sidebar__inner-wrap {
+    display: table;
+  }
+
+  /* line 138, ../../sass/css-layouts/olesk-layout.scss */
+  .l-sidebar__inner-content {
+    display: table-cell;
+  }
+}
+/* line 143, ../../sass/css-layouts/olesk-layout.scss */
+noindex:-o-prefocus, .l-sidebar__inner-wrap {
+  display: table;
+  height: auto;
+}
+
 /* --- IE hacks --- */
-/* line 144, ../../sass/css-layouts/olesk-layout.scss */
+/* line 152, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie10 .l-chrome-hack {
   display: table;
 }
 
-/* line 148, ../../sass/css-layouts/olesk-layout.scss */
+/* line 156, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie10 .l-content-wrap {
   display: table-cell;
 }
 
-/* line 152, ../../sass/css-layouts/olesk-layout.scss */
+/* line 160, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie10 .l-main-section__inner-wrap {
   display: table;
 }
 
-/* line 156, ../../sass/css-layouts/olesk-layout.scss */
+/* line 164, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie10 .l-sidebar__inner-wrap {
   display: table;
 }
 
-/* line 162, ../../sass/css-layouts/olesk-layout.scss */
+/* line 170, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 div {
   box-sizing: border-box;
 }
 
-/* line 166, ../../sass/css-layouts/olesk-layout.scss */
+/* line 174, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 .l-root-wrap {
   padding-bottom: 0;
   min-width: 900px;
 }
 
-/* line 171, ../../sass/css-layouts/olesk-layout.scss */
+/* line 179, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 .l-footer {
   min-width: 900px;
 }
 
-/* line 175, ../../sass/css-layouts/olesk-layout.scss */
+/* line 183, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 .l-page-wrap {
   display: table-row;
 }
 
-/* line 179, ../../sass/css-layouts/olesk-layout.scss */
+/* line 187, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 .l-chrome-hack {
   display: table-cell;
 }
 
-/* line 183, ../../sass/css-layouts/olesk-layout.scss */
+/* line 191, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 .l-content-wrap {
   padding-bottom: 300px;
 }
 
-/* line 187, ../../sass/css-layouts/olesk-layout.scss */
+/* line 195, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 .l-content-wrap-inner {
   display: table-row;
 }
 
-/* line 191, ../../sass/css-layouts/olesk-layout.scss */
+/* line 199, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 .l-main-section {
   display: table-cell;
   height: auto;
 }
 
-/* line 196, ../../sass/css-layouts/olesk-layout.scss */
+/* line 204, ../../sass/css-layouts/olesk-layout.scss */
 .lt-ie9 .l-sidebar {
   display: table-cell;
   height: auto;
 }
 
 /* --- Opera hacks --- */
-/* line 203, ../../sass/css-layouts/olesk-layout.scss */
+/* line 211, ../../sass/css-layouts/olesk-layout.scss */
 noindex:-o-prefocus, .l-header-inner {
   position: absolute;
 }
 
-/* line 207, ../../sass/css-layouts/olesk-layout.scss */
+/* line 215, ../../sass/css-layouts/olesk-layout.scss */
 noindex:-o-prefocus, .l-content-wrap-inner {
   display: table-row;
 }
 
-/* line 211, ../../sass/css-layouts/olesk-layout.scss */
+/* line 219, ../../sass/css-layouts/olesk-layout.scss */
 noindex:-o-prefocus, .l-root-wrap {
   padding-bottom: 0;
 }
 
-/* line 215, ../../sass/css-layouts/olesk-layout.scss */
+/* line 223, ../../sass/css-layouts/olesk-layout.scss */
 noindex:-o-prefocus, .l-content-wrap {
   padding-bottom: 300px;
   position: relative;
 }
 
-/* line 220, ../../sass/css-layouts/olesk-layout.scss */
+/* line 228, ../../sass/css-layouts/olesk-layout.scss */
 noindex:-o-prefocus, .l-page-wrap {
   display: table-row;
 }
 
-/* line 224, ../../sass/css-layouts/olesk-layout.scss */
+/* line 232, ../../sass/css-layouts/olesk-layout.scss */
 noindex:-o-prefocus, .l-chrome-hack {
   display: table-cell;
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 236, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 244, ../../sass/css-layouts/olesk-layout.scss */
   .l-footer {
     height: 200px;
     margin: -200px auto 0 auto;
   }
 
-  /* line 241, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 249, ../../sass/css-layouts/olesk-layout.scss */
   .l-root-wrap {
     padding-bottom: 200px;
   }
 
-  /* line 245, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 253, ../../sass/css-layouts/olesk-layout.scss */
   .l-header {
     height: 50px;
   }
 
-  /* line 249, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 257, ../../sass/css-layouts/olesk-layout.scss */
   .l-header-inner {
     height: 50px;
   }
 
-  /* line 253, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 261, ../../sass/css-layouts/olesk-layout.scss */
   .l-main-section__inner-wrap {
     padding: 10px 5px 5px 5px;
   }
 
-  /* line 257, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 265, ../../sass/css-layouts/olesk-layout.scss */
   .l-sidebar__inner-wrap {
     padding: 5px 5px 10px 5px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 960px) {
-  /* line 236, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 244, ../../sass/css-layouts/olesk-layout.scss */
   .l-footer {
     height: 300px;
     margin: -300px auto 0 auto;
   }
 
-  /* line 241, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 249, ../../sass/css-layouts/olesk-layout.scss */
   .l-root-wrap {
     padding-bottom: 300px;
   }
 
-  /* line 245, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 253, ../../sass/css-layouts/olesk-layout.scss */
   .l-header {
     height: 70px;
   }
 
-  /* line 249, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 257, ../../sass/css-layouts/olesk-layout.scss */
   .l-header-inner {
     height: 70px;
   }
 
-  /* line 253, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 261, ../../sass/css-layouts/olesk-layout.scss */
   .l-main-section__inner-wrap {
     padding: 14px 7px 7px 7px;
   }
 
-  /* line 257, ../../sass/css-layouts/olesk-layout.scss */
+  /* line 265, ../../sass/css-layouts/olesk-layout.scss */
   .l-sidebar__inner-wrap {
     padding: 7px 7px 14px 7px;
   }
