@@ -1,0 +1,78 @@
+@import "compass/css3/box-sizing";
+
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+
+$footer-height: 200px;
+$page-max-width: 900px;
+$left-column-width: 70%;
+$narrow-screen-edge: 600px;
+
+body, html {
+    height: 100%;
+}
+
+body {
+    margin: 0; 
+}
+
+.l-root {
+    height: 100%;
+    margin: 0 auto;
+    max-width: $page-max-width;
+    
+    noindex:-o-prefocus, & {
+        padding-bottom: $footer-height;
+    }
+}
+
+.l-page {
+    display: table;
+    height: 100%;
+}
+
+.l-footer {
+    display: table-row;
+    width: 100%;
+    height: $footer-height;
+    
+    background: rgb(0, 221, 212);
+    background: rgba(0, 221, 212, 0.5);
+}
+
+.l-content {
+    height: 100%;
+    display: table-row;
+
+    font-size: 25px;
+    background: rgb(250, 250, 0);
+    background: rgba(250, 250, 0, 0.3);
+}
+
+.l-columns-wrap {
+    display: table;
+    height: 100%;
+}
+
+.l-left-column {
+    display: table-cell;
+    height: 100%;
+    width: $left-column-width;
+    @media all and ( max-width: $narrow-screen-edge ) {
+        display: table-row;
+    }
+    
+    background: rgba(250, 0, 250, 0.3);
+}
+
+.l-right-column {
+    display: table-cell;
+    height: 100%;
+    width: 100 - $left-column-width;
+    @media all and ( max-width: $narrow-screen-edge ) {
+        display: table-row;
+    }
+
+    background: rgba(0, 250, 250, 0.3);
+}
