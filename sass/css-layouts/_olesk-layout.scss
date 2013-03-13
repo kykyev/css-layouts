@@ -1,0 +1,104 @@
+@import "compass/css3/box-sizing";
+
+
+@mixin olesk-layout (
+        $footer-height: 200px,
+        $header-height: 100px,
+        $narrow-screen-edge: 960px,
+        $page-max-width: 1200px,
+        $left-column-width: 70%
+    ) 
+{
+    
+    *, *:after, *:before {
+        @include box-sizing(border-box);
+    }
+
+    body, html {
+        height: 100%;
+    }
+
+    .l-root {
+        height: 100%;
+        margin: 0 auto;
+        max-width: $page-max-width;
+
+        noindex:-o-prefocus, & {
+            padding-bottom: $footer-height + $header-height;
+        }
+
+        .lt-ie10 & {
+            padding-bottom: $footer-height + $header-height;
+        }
+    }
+
+    .l-page {
+        display: table;
+        height: 100%;
+    }
+
+    .l-header {
+        display: table-row;
+        height: $header-height;
+    }
+
+    .l-footer {
+        display: table-row;
+        width: 100%;
+        height: $footer-height;
+    }
+
+    .l-content {
+        height: 100%;
+        display: table-row;
+    }
+
+    .l-ie9-fix {
+        display: table-cell;
+        height: 100%;
+    }
+
+    .l-columns-wrap {
+        display: table;
+        height: 100%;
+    }
+
+    .l-left-column {
+        display: table-cell;
+        height: 100%;
+        width: $left-column-width;
+        @media all and ( max-width: $narrow-screen-edge ) {
+            display: table-row;
+        }
+    }
+
+    .l-right-column {
+        display: table-cell;
+        height: 100%;
+        width: 100 - $left-column-width;
+        @media all and ( max-width: $narrow-screen-edge ) {
+            display: table-row;
+        }
+    }
+}
+
+
+@mixin olesk-layout-adjust($footer-height, $header-height, $left-column-width)
+{
+    
+    .l-header {
+        height: $header-height;
+    }
+
+    .l-footer {
+        height: $footer-height;
+    }
+
+    .l-left-column {
+        width: $left-column-width;
+    }
+
+    .l-right-column {
+        width: 100 - $left-column-width;
+    }
+}
