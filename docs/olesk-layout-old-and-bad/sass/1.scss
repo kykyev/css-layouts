@@ -4,17 +4,20 @@
     @include box-sizing(border-box);
 }
 
+$footer-height: 200px;
+
 body, html {
     height: 100%;
 }
 
 body {
     padding: 0 20px;
+    margin: 0; 
 }
 
 .l-footer {
-    height: 200px;
-    margin-top: -200px;
+    height: $footer-height;
+    margin-top: -$footer-height;
 
     background: rgb(0, 221, 212);
     background: rgba(0, 221, 212, 0.5);
@@ -22,7 +25,7 @@ body {
 
 .l-root-wrap {
     min-height: 100%;
-    padding-bottom: 200px;
+    padding-bottom: $footer-height;
     
     outline: dashed 8px red;
 }
@@ -39,5 +42,5 @@ body {
 }
 
 .lt-ie9 .l-page-wrap {
-    padding-bottom: 200px;
+    padding-bottom: $footer-height;
 }
