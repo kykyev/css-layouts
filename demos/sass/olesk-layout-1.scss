@@ -5,20 +5,20 @@ body {
     padding: 0;
 }
 
-@include olesk-layout($padding: 10px);
+@include olesk-layout($narrow-screen-edge: 760px, $page-max-width: 1000px);
+
+.l-header {
+    background: rgb(255, 200, 0);
+}
 
 .l-footer {
-    background: rgb(20, 100, 255);
+    background: rgb(220, 220, 220);
 }
 
-.l-main-section__inner-content {
-    background: rgb(20, 255, 100);
+.l-left-column {
+    background: rgb(200, 250, 0);
 }
 
-.l-sidebar__inner-content {
-    background: rgb(255, 20, 100);
-}
-
-.l-header-inner {
-    background: rgb(255, 150, 20);
+.l-right-column {
+    background: rgb(0, 220, 255);
 }
