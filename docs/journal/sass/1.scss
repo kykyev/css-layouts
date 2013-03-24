@@ -1,0 +1,127 @@
+@import "compass";
+@import "normalize";
+@import "focal-point/focal-point";
+
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+
+@include focal-point();
+@include focal-point__patch2nosvg();
+
+.focal-point {
+    font-size: 0;
+}
+
+body {
+    margin: 0;
+}
+
+@include establish-baseline();
+
+
+$default-font-stack: Arial, Helmet, Freesans, sans-serif;
+$text-optimal-width: 33em;
+$narrow-screen-edge: 1054px;
+$small-screen-edge: $text-optimal-width * (10 / 7) * 0.8;
+$tiny-screen-edge: $text-optimal-width * (10 / 7) * 0.8 * 0.6;
+
+
+.l-journal {
+    max-width: $text-optimal-width * (10 / 7);
+    margin: 0 auto;
+    font-family: $default-font-stack;
+}
+
+.l-journal-segment__pic {
+    padding-left: 10%;
+    padding-right: 2em;
+    padding-top: 2 * $base-line-height;
+    padding-bottom: 2 * $base-line-height;
+
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    @include debug-vertical-alignment();
+}
+
+.l-journal-segment__text-in {
+    margin-left: 10%;
+    margin-right: 20%;
+    @include debug-vertical-alignment();
+}
+
+.l-journal-segment__pic__img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.l-journal-segment__pic__label {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 11em;
+    margin-top: $base-line-height;
+    margin-left: 1em;
+    float: right;
+    font-family: arial;
+    @include debug-vertical-alignment();
+}
+
+
+@media all and ( min-width: $narrow-screen-edge ) {
+
+    .l-journal {
+        max-width: 2 * $text-optimal-width * (10 / 7);
+    }
+
+    .l-journal-segment {
+        display: table;
+        width: 100%;
+    }
+
+    .l-journal-segment__text {
+        display: table-cell;
+        vertical-align: top;
+        width: $text-optimal-width * (10 / 7);
+    }
+
+    .l-journal-segment__pic {
+        display: table-cell;
+        padding-left: 0;
+    }
+
+    .l-journal-segment__pic__label {
+        float: none;
+        display: block;
+    }
+}
+
+@media all and ( max-width: $small-screen-edge ) {
+
+    .l-journal-segment__text-in {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+    .l-journal-segment__pic {
+        padding-left: 5%;
+    }
+}
+
+@media all and ( max-width: $tiny-screen-edge ) {
+
+    .l-journal-segment__text-in {
+        margin-left: 0.8em;
+        margin-right: 1em;
+    }
+
+    .l-journal-segment__pic {
+        padding-left: 0.8em;
+        padding-right: 0.5em;
+    }
+}
+
+
