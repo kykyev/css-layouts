@@ -1,5 +1,4 @@
 @import "compass";
-@import "normalize";
 @import "focal-point/focal-point";
 
 *, *:after, *:before {
@@ -15,26 +14,38 @@
 
 body {
     margin: 0;
+    background: url(/images/devbg.svg);
 }
 
 @include establish-baseline();
 
 
-$default-font-stack: Arial, Helmet, Freesans, sans-serif;
+$font-stack: Arial, Helmet, Freesans, sans-serif;
 $text-optimal-width: 33em;
-$narrow-screen-edge: 1054px;
-$small-screen-edge: $text-optimal-width * (10 / 7) * 0.8;
-$tiny-screen-edge: $text-optimal-width * (10 / 7) * 0.8 * 0.6;
+$max-bodytext-width: $text-optimal-width * (3 / 2);
+$wide-screen-bodytext-width: (8 / 9) * $max-bodytext-width;
+
+$narrow-screen-edge: 1.8 * $wide-screen-bodytext-width;
+$small-screen-edge: $max-bodytext-width * 0.8;
+$tiny-screen-edge: $small-screen-edge * 0.8 * 0.8;
 
 
 .l-journal {
-    max-width: $text-optimal-width * (10 / 7);
+    max-width: $max-bodytext-width;
     margin: 0 auto;
-    font-family: $default-font-stack;
+    font-family: $font-stack;
+
+    outline: dashed red 1px;
+    @include debug-vertical-alignment();
+}
+
+.l-journal-segment__text-in {
+    margin-left: 11.11%;
+    margin-right: 22.22%;
 }
 
 .l-journal-segment__pic {
-    padding-left: 10%;
+    padding-left: 11.11%;
     padding-right: 2em;
     padding-top: 2 * $base-line-height;
     padding-bottom: 2 * $base-line-height;
@@ -45,13 +56,7 @@ $tiny-screen-edge: $text-optimal-width * (10 / 7) * 0.8 * 0.6;
         display: table;
     }
 
-    @include debug-vertical-alignment();
-}
-
-.l-journal-segment__text-in {
-    margin-left: 10%;
-    margin-right: 20%;
-    @include debug-vertical-alignment();
+    background: rgba(221, 221, 221, 0.5);
 }
 
 .l-journal-segment__pic__img {
@@ -67,14 +72,13 @@ $tiny-screen-edge: $text-optimal-width * (10 / 7) * 0.8 * 0.6;
     margin-left: 1em;
     float: right;
     font-family: arial;
-    @include debug-vertical-alignment();
 }
 
 
 @media all and ( min-width: $narrow-screen-edge ) {
 
     .l-journal {
-        max-width: 2 * $text-optimal-width * (10 / 7);
+        max-width: 2 * $wide-screen-bodytext-width;
     }
 
     .l-journal-segment {
@@ -85,7 +89,12 @@ $tiny-screen-edge: $text-optimal-width * (10 / 7) * 0.8 * 0.6;
     .l-journal-segment__text {
         display: table-cell;
         vertical-align: top;
-        width: $text-optimal-width * (10 / 7);
+        width: $wide-screen-bodytext-width
+    }
+
+    .l-journal-segment__text-in {
+        margin-left: 11.11%;
+        margin-right: 11.11%;
     }
 
     .l-journal-segment__pic {

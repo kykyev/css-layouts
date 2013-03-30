@@ -1,5 +1,6 @@
 # Require any additional compass plugins here.
 require "css-grids"
+require 'focal-point'
 require File.join(File.dirname(__FILE__), '..', '/lib/css-layouts')
 
 # Set this to the root of your project when deployed:
