@@ -1,0 +1,43 @@
+{% extends "_boilerplate.j2" %}
+
+{% from 'journal-layout/_segment.j2' import segment %}
+
+{%  block stylesheets %}
+  <link rel="stylesheet" href="/stylesheets/journal-layout.css">
+{% endblock %}
+
+{%  block body %}
+  <div class="l-journal">
+    {{ segment( 
+        text = g.loremipsum.get_paragraph()*3,
+        pic = {
+            'url': "/images/city-320x240.jpg",
+            'text': g.loremipsum.get_sentence(),
+            'width': "320",
+            'placeholder': "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUAAAADwAQMAAABL4y8oAAAABGdBTUEAALGPC/xhBQAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAAgSURBVGje7cGBAAAAAMOg+VMf4QJVAQAAAAAAAAAAwDcmcAABRdpoSAAAAABJRU5ErkJggg=="
+        })
+    }}
+
+    {{ segment(
+        g.loremipsum.get_paragraph()*3,
+        pic = {
+            'url': "/images/city-416x312.jpg",
+            'text': g.loremipsum.get_sentence(),
+            'width': "416",
+            'placeholder': "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaAAAAE4AQMAAAAnzbU0AAAABGdBTUEAALGPC/xhBQAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAAnSURBVHja7cGBAAAAAMOg+VNf4AhVAQAAAAAAAAAAAAAAAAAAAHwDQJgAAW4Obk0AAAAASUVORK5CYII="
+        })
+    }}
+
+    {{ segment(
+        g.loremipsum.get_paragraph()*2,
+        pic = {
+            'url': "/images/404.jpg",
+            'text': g.loremipsum.get_sentence(),
+            'width': "416",
+            'placeholder': "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaAAAAE4AQMAAAAnzbU0AAAABGdBTUEAALGPC/xhBQAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAAnSURBVHja7cGBAAAAAMOg+VNf4AhVAQAAAAAAAAAAAAAAAAAAAHwDQJgAAW4Obk0AAAAASUVORK5CYII="
+        })
+    }}
+  </div>
+{% endblock %}
+
+

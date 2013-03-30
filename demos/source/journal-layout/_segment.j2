@@ -1,0 +1,27 @@
+
+{% macro segment(text, pic) -%}
+  <div class="l-journal-segment">
+    <div class="l-journal-segment__text">
+      <div class="l-journal-segment__text-in">{{ text }}</div>
+    </div>
+    <div class="l-journal-segment__pic">
+      {{ picture(pic) }}
+    </div>
+  </div>
+{%- endmacro %}
+
+
+{% macro picture(pic) -%}
+    <div class="l-journal-segment__pic__img" style="max-width:{{ pic.width }}px">
+      <div class="focal-point focal-point__patch2">
+        <div>
+          <img src="{{ pic.placeholder }}">
+          <img src="{{ pic.url }}">
+        </div>
+      </div>
+    </div>
+    <div class="l-journal-segment__pic__label">
+      {{ pic.text }}
+    </div>
+{%- endmacro %}
+

@@ -1,0 +1,32 @@
+@import "compass";
+@import "css-layouts/journal-layout";
+@import "focal-point/focal-point";
+
+
+*, *:after, *:before {
+    @include box-sizing(border-box);
+}
+
+
+body {
+    margin: 0;
+    background: url(/images/devbg.svg);
+}
+
+@include establish-baseline();
+
+@include focal-point();
+@include focal-point__patch2nosvg();
+
+.focal-point {
+    font-size: 0;
+}
+
+
+@include journal-layout();
+
+.l-journal-segment__text, .l-journal-segment__pic__label {
+    @include debug-vertical-alignment();
+}
+
+
