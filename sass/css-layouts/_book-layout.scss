@@ -1,0 +1,85 @@
+
+@mixin book-layout(
+    $text-optimal-width: 35em,
+    $max-bodytext-width: $text-optimal-width * (3 / 2),
+    $narrow-screen-edge: $max-bodytext-width * 0.97,
+    $small-screen-edge: $narrow-screen-edge * 0.9,
+    $tiny-screen-edge: $small-screen-edge * 0.9,
+    $font-stack: (Arial, sans-serif)
+) {
+
+    .l-book {
+        max-width: $max-bodytext-width;
+        margin: 0 auto;
+        font-family: $font-stack;
+        
+        outline: dashed 1px red;
+    }
+
+    .l-book__text {
+        margin-left: 11.11%;
+        margin-right: 22.22%;
+    }
+
+    .l-book__pic {
+        margin-left: -8.33%;
+        margin-right: -30%;
+        text-align: center;
+    }
+
+    .l-book__pic-img {
+        display: inline-block;
+        vertical-align: top;
+        background-color: hsla(10, 50, 50, 0.4);
+    }
+
+    .l-book__pic-label {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 13em;
+        margin-left: 4em;
+        text-align: left;
+    }
+
+    @media all and ( max-width: $narrow-screen-edge ) {
+        
+        .l-book__text {
+            margin-left: 8%;
+            margin-right: 12%;
+        }
+
+        .l-book__pic {
+            margin-left: -6%;
+            margin-right: -12%;
+        }
+
+        .l-book__pic-label {
+            max-width: 19em;
+        }
+    }
+
+    @media all and ( max-width: $small-screen-edge ) {
+        .l-book__text {
+            margin-left: 5%;
+            margin-right: 8%;
+        }
+
+        .l-book__pic {
+            margin-left: -2%;
+            margin-right: -6%;
+        }
+    }
+
+    @media all and ( max-width: $tiny-screen-edge ) {
+
+        .l-book__text {
+            margin-left: 3%;
+            margin-right: 4%;
+        }
+
+        .l-book__pic {
+            margin-left: 0%;
+            margin-right: 0%;
+        }
+    }
+}
