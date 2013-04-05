@@ -18,22 +18,6 @@
         $font-stack: (Arial, sans-serif)
     ) {
     
-    /*@if $max-bodytext-width = default {
-        $max-bodytext-width: $text-optimal-width * (3 / 2);
-    }
-    @if $wide-screen-bodytext-width = default {
-        $wide-screen-bodytext-width: (8 / 9) * $max-bodytext-width;
-    }
-    @if $narrow-screen-edge = default {
-        $narrow-screen-edge: 1.8 * $wide-screen-bodytext-width;
-    }
-    @if $small-screen-edge = default {
-        $small-screen-edge: $max-bodytext-width * 0.8;
-    }
-    @if $tiny-screen-edge = default {
-        $tiny-screen-edge: $small-screen-edge * 0.8 * 0.8;
-    }*/
-    
     .l-journal {
         max-width: $max-bodytext-width;
         margin: 0 auto;
@@ -75,6 +59,9 @@
         font-family: arial;
     }
 
+    .l-journal-segment__pic_nopic {
+        padding: 0;
+    }
 
     @media all and ( min-width: $narrow-screen-edge ) {
 
