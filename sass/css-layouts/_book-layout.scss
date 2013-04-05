@@ -12,8 +12,6 @@
         max-width: $max-bodytext-width;
         margin: 0 auto;
         font-family: $font-stack;
-        
-        outline: dashed 1px red;
     }
 
     .l-book__text {
@@ -30,7 +28,6 @@
     .l-book__pic-img {
         display: inline-block;
         vertical-align: top;
-        background-color: hsla(10, 50, 50, 0.4);
     }
 
     .l-book__pic-label {
