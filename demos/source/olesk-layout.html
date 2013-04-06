@@ -1,0 +1,28 @@
+{% extends "_boilerplate.j2" %}
+
+
+{%  block stylesheets %}
+  <link rel="stylesheet" href="/stylesheets/olesk-layout.css">
+{% endblock %}
+
+
+{%  block body %}
+<div class="l-root">
+    <div class="l-page">
+        <div class="l-header">header</div>
+        <div class="l-content">
+        <div class="l-ie9-fix">
+            <div class="l-columns-wrap">
+                <div class="l-left-column">
+                  <p>{{ g.loremipsum.get_paragraph() }}</p>
+                </div>
+                <div class="l-right-column">
+                    <p>{{ g.loremipsum.get_paragraph()[0:200] }}</p>
+                </div>
+            </div>
+        </div>    
+        </div>
+        <div class="l-footer">footer</div>
+    </div>
+</div>
+{% endblock %}
